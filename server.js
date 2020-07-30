@@ -6,9 +6,9 @@ app.MockUserData=[
   {name:'John', lastName:'whick'}
 ]
 
-app.get('/', function(req, res){
+app.get('/users', function(req, res){
   res.json({
-    sucess: true,
+    success: true,
     message: 'sucessfully got users. Nice!',
     users: MockUserData
   })
